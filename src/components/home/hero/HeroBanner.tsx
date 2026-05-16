@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import styles from "./HeroBanner.module.css";
 
 const CYCLING_WORDS = [
-  "luxurious",
   "elegant",
   "silent",
   "premium",

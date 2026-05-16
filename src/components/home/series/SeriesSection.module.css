@@ -38,6 +38,7 @@
   cursor: pointer;
   text-decoration: none;
   display: block;
+
 }
 
 /* image */
@@ -78,7 +79,7 @@
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Lato", Times, serif;
+  font-family: var(--font-verah);
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
@@ -107,6 +108,8 @@
   transform: translateY(12px);
   transition: opacity 0.35s ease, transform 0.35s ease;
   z-index: 2;
+
+
 }
 
 .card:hover .hoverContent {
@@ -115,7 +118,7 @@
 }
 
 .hoverName {
-  font-family: "Lato", Times, serif;
+  font-family: var(--font-verah);
   font-size: 1.75rem;
   font-weight: 600;
   color: #ffffff;
