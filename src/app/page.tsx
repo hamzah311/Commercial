@@ -27,27 +27,29 @@ import NotificationBar from "@/components/home/notificationbar/NotificationBar";
 import ProcessSteps from "@/components/home/processsteps/ProcessSteps";
 import ContactForm from "@/components/home/contactform/ContactForm";
 import IndustriesSection from "@/components/home/industriessection/IndustriesSection";
+import SafetySection from "@/components/home/safetysection/SafetySection";
 
 export default function Home() {
   const current_theme: LandingType = "HOME";
 
   return (
     <div className={styles.page}>
-      <NotificationBar />
+      {/* <NotificationBar /> */}
       <Navbar />
       <HeroBanner data={HERO_TEXTS[current_theme]} />
       <ContactForm />
       <StatsSection />
-      <AboutSection />
+      <ProjectsSection />
+      < SafetySection />
+      {/* <AboutSection /> */}
       {/* <MarqueeSection /> */}
       <MarqueeLogos />
       <IndustriesSection />
       <SeriesSection />
-      <ProcessSteps />
       <FeaturesSection />
-      <CtaBanner />
+      <ProcessSteps />
+      {/* <CtaBanner /> */}
       {/* <SolutionsSection /> */}
-      <ProjectsSection />
       <FloatingBtn />
       {/* <ScrollingText data={SCROLLING_TEXT[current_theme]} />
       <Predefine data={PREDEFINE[current_theme]} />

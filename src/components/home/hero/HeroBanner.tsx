@@ -4,14 +4,12 @@ import { useState, useEffect } from "react";
 import styles from "./HeroBanner.module.css";
 
 const CYCLING_WORDS = [
-  "elegant",
-  "silent",
-  "premium",
-  "modern",
-  "reliable",
-  "refined",
-  "prestigious",
-  "exclusive",
+  "Corporate Offices",
+  "Hotels & Resorts",
+  "Shopping Malls",
+  "Hospitals",
+  "Warehouses",
+  "Residential Towers",
 ];
 
 interface CyclingTitleProps {
@@ -20,7 +18,7 @@ interface CyclingTitleProps {
 }
 
 function CyclingTitle({
-  staticLine = "Our Elevators are",
+  staticLine = "Premium ELevator Solutions for",
   words = CYCLING_WORDS,
 }: CyclingTitleProps) {
   const [index, setIndex] = useState(0);

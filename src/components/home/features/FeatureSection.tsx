@@ -3,218 +3,65 @@
 import { useState } from "react";
 import styles from "./FeatureSection.module.css";
 
-// const FEATURES_DEFAULT = [
-//     {
-//         label: "Silent and smooth operation",
-//         imageSrc: "/images/features/silent.png",
-//         imageAlt: "Silent and smooth elevator operation",
-//         subheading: "Designed for modern villas. \nEngineered for everyday comfort.",
-//         description: "We specialize in lift solutions for private villas and premium residences across the UAE..",
-//     },
-//     {
-//         label: "Space-optimized designs",
-//         imageSrc: "/images/features/space.png",
-//         imageAlt: "Space-optimized elevator design",
-//         subheading: "Fits where others\nsimply cannot.",
-//         description: "Engineered to work within tight floor-plan constraints without compromising on comfort or aesthetics.",
-//     },
-//     {
-//         label: "Custom cabin finishes",
-//         imageSrc: "/images/features/custom.png",
-//         imageAlt: "Custom elevator cabin finishes",
-//         subheading: "Your style,\nperfectly reflected.",
-//         description: "Choose from a wide palette of woods, metals, mirrors, and glass to create a cabin that complements your interior.",
-//     },
-//     {
-//         label: "Minimal structural modification",
-//         imageSrc: "/images/features/minimal.png",
-//         imageAlt: "Minimal structural modification",
-//         subheading: "Install with\nzero disruption.",
-//         description: "Our systems are designed to slot into existing structures with minimal civil work, saving time and cost.",
-//     },
-//     {
-//         label: "Seamless integration with interiors",
-//         imageSrc: "/images/features/seamless.png",
-//         imageAlt: "Elevator seamlessly integrated with home interiors",
-//         subheading: "Blends in,\nstands out.",
-//         description: "Each lift is designed as an architectural element that enhances your home rather than interrupting it.",
-//     },
-//     {
-//         label: "No pit / minimal civil work options",
-//         imageSrc: "/images/features/no-pit.png",
-//         imageAlt: "No pit elevator option",
-//         subheading: "Designed for modern villas.\nEngineered for everyday comfort.",
-//         description: "We specialize in lift solutions for private villas and premium residences across the UAE.",
-//     },
-//     {
-//         label: "German / Italian components",
-//         imageSrc: "/images/features/german.png",
-//         imageAlt: "German and Italian elevator components",
-//         subheading: "European precision,\ndelivered to your door.",
-//         description: "Every drive, rail, and control panel is sourced from certified European manufacturers for lasting reliability.",
-//     },
-//     {
-//         label: "Installation in 30 days",
-//         imageSrc: "/images/features/installation.png",
-//         imageAlt: "Fast elevator installation",
-//         subheading: "Up and running\nin under a month.",
-//         description: "Our streamlined installation process means your home lift is fully operational within 30 days of confirmation.",
-//     },
-//     {
-//         label: "Custom interiors matching your home",
-//         imageSrc: "/images/features/interiors.png",
-//         imageAlt: "Custom elevator interiors",
-//         subheading: "Tailored to every\nlast detail.",
-//         description: "From flooring to lighting, every interior element is handpicked to create a cohesive look with your home.",
-//     },
-// ];
 const FEATURES_DEFAULT = [
-
     {
-  
-      label: "High-performance operation",
-  
-      imageSrc: "/images/features/silent.png",
-  
-      imageAlt: "High-performance commercial elevator",
-  
-      subheading: "Built for busy\ncommercial environments.",
-  
-      description:
-  
-        "Engineered for smooth, reliable, and efficient movement in offices, malls, hotels, and commercial buildings.",
-  
+        label: "Silent & smooth performance",
+        imageSrc: "/images/features/silent-1.jpeg",
+        imageAlt: "Silent commercial elevator operation",
+        subheading: "Built for busy spaces.\nEngineered for smooth performance.",
+        description: "Designed for offices, malls, hotels, and commercial buildings across the UAE.",
     },
-  
     {
-  
-      label: "Space-efficient designs",
-  
-      imageSrc: "/images/features/space.png",
-  
-      imageAlt: "Space-efficient commercial lift",
-  
-      subheading: "Maximum efficiency,\nminimal footprint.",
-  
-      description:
-  
-        "Smart lift solutions designed to optimize available space without compromising performance or comfort.",
-  
+        label: "Space-efficient designs",
+        imageSrc: "/images/features/space.jpeg",
+        imageAlt: "Space-efficient commercial lift",
+        subheading: "Maximum efficiency.\nMinimal space usage.",
+        description: "Optimized lift systems designed to fit modern commercial floor plans with ease.",
     },
-  
     {
-  
-      label: "Premium cabin interiors",
-  
-      imageSrc: "/images/features/custom.png",
-  
-      imageAlt: "Premium commercial elevator interiors",
-  
-      subheading: "Elegant interiors\nfor modern spaces.",
-  
-      description:
-  
-        "Choose from premium finishes, lighting, and materials to match the aesthetics of your commercial property.",
-  
+        label: "Premium cabin interiors",
+        imageSrc: "/images/features/interior.jpeg",
+        imageAlt: "Premium commercial lift interiors",
+        subheading: "Modern interiors,\ncrafted to impress.",
+        description: "Elegant cabin finishes designed to match premium commercial environments.",
     },
-  
     {
-  
-      label: "Minimal structural changes",
-  
-      imageSrc: "/images/features/minimal.png",
-  
-      imageAlt: "Commercial lift installation",
-  
-      subheading: "Fast installation,\nminimal disruption.",
-  
-      description:
-  
-        "Our systems are designed for seamless integration with reduced civil work and downtime.",
-  
+        label: "Minimal structural work",
+        imageSrc: "/images/features/minimal.jpeg",
+        imageAlt: "Minimal structural modification",
+        subheading: "Fast installation.\nMinimal disruption.",
+        description: "Efficient installation systems that reduce civil work and downtime for businesses.",
     },
-  
     {
-  
-      label: "Seamless architectural integration",
-  
-      imageSrc: "/images/features/seamless.png",
-  
-      imageAlt: "Integrated commercial elevator design",
-  
-      subheading: "Designed to blend\nwith your interiors.",
-  
-      description:
-  
-        "Modern lift systems crafted to complement commercial architecture and enhance user experience.",
-  
+        label: "Seamless architectural integration",
+        imageSrc: "/images/features/seamless.jpeg",
+        imageAlt: "Commercial lift integrated with interiors",
+        subheading: "Designed to blend\nwith modern architecture.",
+        description: "Commercial lifts that enhance the aesthetics of offices, malls, and public spaces.",
     },
-  
     {
-  
-      label: "Machine-room-less options",
-  
-      imageSrc: "/images/features/no-pit.png",
-  
-      imageAlt: "Machine room less elevator",
-  
-      subheading: "Smart engineering\nfor modern buildings.",
-  
-      description:
-  
-        "Advanced machine-room-less solutions that save space while maintaining excellent performance and safety.",
-  
+        label: "Flexible installation options",
+        imageSrc: "/images/features/no-pit.jpeg",
+        imageAlt: "Flexible commercial lift installation",
+        subheading: "Adaptable solutions\nfor every building.",
+        description: "Available with low-pit and space-saving configurations for commercial projects.",
     },
-  
     {
-  
-      label: "European technology",
-  
-      imageSrc: "/images/features/german.png",
-  
-      imageAlt: "European elevator components",
-  
-      subheading: "Precision technology,\ntrusted worldwide.",
-  
-      description:
-  
-        "Built using premium European components for durability, safety, and long-term reliability.",
-  
+        label: "German / Italian technology",
+        imageSrc: "/images/features/german.jpeg",
+        imageAlt: "European commercial lift components",
+        subheading: "European engineering.\nTrusted worldwide.",
+        description: "Premium components sourced from certified German and Italian manufacturers.",
     },
-  
     {
-  
-      label: "Efficient installation process",
-  
-      imageSrc: "/images/features/installation.png",
-  
-      imageAlt: "Commercial lift installation process",
-  
-      subheading: "Quick setup,\nreliable performance.",
-  
-      description:
-  
-        "Our experienced team ensures smooth installation with minimal interruption to your operations.",
-  
+        label: "Quick project delivery",
+        imageSrc: "/images/features/installation.jpeg",
+        imageAlt: "Fast commercial lift installation",
+        subheading: "Delivered fast.\nBuilt to last.",
+        description: "Streamlined execution ensures timely installation for commercial developments.",
     },
-  
-    {
-  
-      label: "Custom solutions for every project",
-  
-      imageSrc: "/images/features/interiors.png",
-  
-      imageAlt: "Custom commercial elevator",
-  
-      subheading: "Tailored for your\ncommercial needs.",
-  
-      description:
-  
-        "Every lift is customized to suit your building’s functionality, capacity, and design requirements.",
-  
-    },
-  
-  ];
+    
+];
 
 interface Feature {
     label: string;

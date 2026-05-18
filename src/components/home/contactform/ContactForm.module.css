@@ -1,231 +1,308 @@
 .wrapper {
   width: 100%;
-  /* background: #1a1a1a; */
   padding: 45px 40px;
   box-sizing: border-box;
-
 }
 
-.form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 12px;
+.container {
   max-width: 1400px;
   margin: 0 auto;
-  align-items: stretch;
+
+  display: flex;
+  gap: 24px;
+
+  background: transparent;
 }
 
-/* ── Shared Styles ── */
+/* LEFT CONTENT */
+
+.imageSide {
+  width: 42%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 60px;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 2px solid #000000;
+
+  background: #ffffff;
+
+  color: #000000;
+}
+
+.leftSubtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #bd8338;
+
+  margin-bottom: 18px;
+}
+
+.leftTitle {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family: var(--font-verah);
+  margin: 0 0 22px;
+}
+
+.leftDescription {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-family: var(--font-montserrat);
+  color: rgba(45, 45, 45, 0.72);
+
+  margin: 0;
+  max-width: 500px;
+}
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.featureItem {
+  position: relative;
+
+  padding-left: 26px;
+
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(35, 35, 35, 0.82);
+}
+
+.featureItem::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 10px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #bd8338;
+}
+
+/* RIGHT FORM */
+
+.formSide {
+  flex: 1;
+
+  padding: 48px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #d4d4d4;
+
+  position: relative;
+
+  background: #1d1d1d;
+}
+
+/* GLASS LAYER */
+
+.formSide::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* FORM */
+
+.form {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  padding: 32px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* INPUTS */
+
 .input,
 .select,
-.textarea,
-.submitBtn,
-.whatsappBtn {
+.submitBtn {
   width: 100%;
   height: 52px;
+
   border: none;
-  border-radius: 30px;
-  font-size: 0.92rem;
+  border-radius: 10px;
+
+  font-size: 1rem;
+
   box-sizing: border-box;
-  text-align: center;
-}
-.input,
-.select,
-.textarea,
-.submitBtn{
-  border: 1px solid #bd8338;
 }
 
-/* ── Inputs ── */
+/* FIELDS */
+
 .input,
-.select,
-.textarea {
-  background: #ffffff;
+.select {
+  background: rgba(255, 255, 255, 0.96);
+
   color: #1a1a1a;
-  padding: 0 16px;
+
+  padding: 0 28px;
+
   outline: none;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-align: left;
+  text-align-last: left;
+}
+
+.input::placeholder {
+  color: #8f8f8f;
 }
 
 .select {
   appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
 
   cursor: pointer;
-
-  padding: 0 40px;
-  text-align: center;
-  text-align-last: center;
-
-  background: #ffffff;
-}
-
-.input::placeholder,
-.textarea::placeholder {
-  color: #888888;
 }
 
 .input:focus,
-.select:focus,
-.textarea:focus {
-  box-shadow: 0 0 0 2px #bd8338;
+.select:focus {
+  outline: none;
 }
 
-/* ── Select ── */
-.selectWrap {
-  position: relative;
-  width: 100%;
-}
+/* BUTTON */
 
-.select {
-  appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding-right: 40px;
-}
-
-.chevron {
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: #888888;
-  display: flex;
-  align-items: center;
-}
-
-.chevron svg {
-  width: 16px;
-  height: 16px;
-}
-
-/* ── Textarea ── */
-.textarea {
-  resize: none;
-  padding-top: 15px;
-}
-
-/* ── Buttons Wrapper ── */
-.formActions {
-  display: flex;
-  gap: 12px;
-  width: 100%;
-  height: 52px;
-}
-
-/* ── Submit Button ── */
 .submitBtn {
-  flex: 1;
-  background: #bd8338;
+  background: #101114;
   color: #ffffff;
-  font-weight: 700;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
   cursor: pointer;
-  transition: background 0.25s ease;
+
+  transition: 0.25s ease;
 }
 
 .submitBtn:hover {
-  color: #ffffff;
   background: #bd8338;
 }
 
-/* ── WhatsApp Button ── */
-.whatsappBtn {
-  flex: 1;
+/* MOBILE */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  background: #1DA851;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
-
-  transition: background 0.25s ease;
-}
-
-.whatsappBtn:hover {
-  background: #188c44;
-}
-
-/* ── Mobile ── */
 @media (max-width: 992px) {
+
   .wrapper {
     padding: 20px;
-    background: #1a1a1a;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .leftTitle, .leftSubtitle {
+    text-align: center;
+  }
+  .imageSide {
+    width: 100%;
+    padding: 40px 28px;
+  }
+
+  .formSide {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .leftTitle {
+    font-size: 2.2rem;
   }
 
   .form {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .input,
-  .selectWrap,
-  .textarea,
-  .formActions {
-    width: 100%;
   }
 
   .input,
   .select,
-  .textarea,
-  .submitBtn,
-  .whatsappBtn {
-    width: 100%;
-    height: 57px;
-    font-size: 0.9rem;
-    border: none;
-  }
-
-  .select {
-
-    padding: 0 40px;
-
-    text-align: center;
-
-    text-align-last: center;
-
-  }
-
-  .textarea {
-    min-height: 120px;
-    padding-top: 14px;
-  }
-
-  .input:focus,
-  .select:focus,
-  .textarea:focus {
-    box-shadow: none;
-  }
-
-  .formActions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    height: auto;
-  }
-
-  .submitBtn,
-  .whatsappBtn {
-    flex: none;
+  .submitBtn {
+    height: 64px;
+    font-size: 0.92rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+
   .wrapper {
     padding: 16px;
   }
 
+  .imageSide {
+    padding: 32px 22px;
+  }
+
+  .leftTitle {
+    font-size: 1.8rem;
+  }
+
+  .leftDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .formSide {
+    padding: 18px;
+  }
+
+  .form {
+    padding: 16px;
+    gap: 14px;
+  }
+
   .input,
   .select,
-  .textarea,
-  .submitBtn,
-  .whatsappBtn {
-    font-size: 0.85rem;
+  .submitBtn {
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

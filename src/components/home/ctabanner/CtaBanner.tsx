@@ -29,7 +29,7 @@ const ArrowIcon = () => (
 export default function CtaBanner({ data }: CtaBannerProps) {
   const text =
     data?.text ??
-    "We deliver advanced commercial lift solutions with reliable performance, seamless mobility, and modern designs for offices, hotels, malls, and commercial spaces.";
+    "We create elevated living experiences through intelligent home lift solutions, combining precision engineering, seamless mobility, and refined design for modern residences and luxury villas.";
   const buttonText = data?.buttonText ?? "Book Free Site Visit";
   const buttonHref = data?.buttonHref ?? "#contact-banner";
 

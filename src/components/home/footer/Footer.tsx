@@ -66,22 +66,6 @@ const ArrowIcon = () => (
 );
 
 export default function Footer() {
-  const navLinks = [
-    "Home",
-    "Maintenance",
-    "Modernization",
-    "Our Products",
-    "About Us",
-  ];
-
-  const moreLinks = [
-    "Projects",
-    "Blogs",
-    "Help Disk",
-    "Contact",
-    "Gallery",
-  ];
-
   const locations = [
     "Abu Dhabi",
     "Sharjah",
@@ -106,7 +90,6 @@ export default function Footer() {
 
       <div className={styles.container}>
         <div className={styles.grid}>
-
           {/* Brand Column */}
           <div className={styles.brandCol}>
             <div className={styles.logo}>
@@ -135,40 +118,12 @@ export default function Footer() {
                 });
               }}
             >
-              <span className={styles.quoteBtnText}>
-                Get a Free Quote
-              </span>
+              <span className={styles.quoteBtnText}>Get a Free Quote</span>
 
               <span className={styles.arrowCircle}>
                 <ArrowIcon />
               </span>
             </Link>
-          </div>
-
-          {/* Nav Column 1 */}
-          <div className={styles.navCol}>
-            <ul className={styles.linkList}>
-              {navLinks.map((link) => (
-                <li key={link}>
-                  <span className={styles.navLink}>
-                    {link}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Nav Column 2 */}
-          <div className={styles.navCol}>
-            <ul className={styles.linkList}>
-              {moreLinks.map((link) => (
-                <li key={link}>
-                  <span className={styles.navLink}>
-                    {link}
-                  </span>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Locations Column */}
@@ -180,9 +135,7 @@ export default function Footer() {
                     <LocationPinIcon />
                   </span>
 
-                  <span className={styles.cityName}>
-                    {city}
-                  </span>
+                  <span className={styles.cityName}>{city}</span>
                 </li>
               ))}
             </ul>
@@ -190,37 +143,26 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div className={styles.contactCol}>
-            <h3 className={styles.contactTitle}>
-              Contact Us
-            </h3>
+            <h3 className={styles.contactTitle}>Contact Us</h3>
 
-            <span className={styles.phone}>
+            <a href="tel:+971523753356" className={styles.phone}>
               +971 52 375 3356
-            </span>
+            </a>
 
-            <span className={styles.email}>
+            <a href="mailto:info@inventelevator.com" className={styles.email}>
               info@inventelevator.com
-            </span>
+            </a>
 
             <div className={styles.socialRow}>
-              <span
-                className={styles.socialIcon}
-                aria-label="Instagram"
-              >
+              <span className={styles.socialIcon} aria-label="Instagram">
                 <InstagramIcon />
               </span>
 
-              <span
-                className={styles.socialIcon}
-                aria-label="X"
-              >
+              <span className={styles.socialIcon} aria-label="X">
                 <XIcon />
               </span>
 
-              <span
-                className={styles.socialIcon}
-                aria-label="Facebook"
-              >
+              <span className={styles.socialIcon} aria-label="Facebook">
                 <FacebookIcon />
               </span>
             </div>

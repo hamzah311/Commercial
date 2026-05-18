@@ -12,33 +12,33 @@ interface FaqItem {
 const faqs: FaqItem[] = [
   {
     id: "01",
-    question: "What types of elevators does Invent Elevator offer?",
+    question: "What types of commercial lifts do you offer?",
     answer:
-      "We offer a wide range of elevator solutions including passenger lifts, home lifts, hospital elevators, goods lifts and custom-designed elevator systems tailored to project requirements.",
+      "We provide commercial lift solutions including passenger elevators, mall lifts, office building elevators, hospital lifts, goods lifts, and customized systems for commercial projects.",
   },
   {
     id: "02",
-    question: "Do you provide customized elevator solutions?",
+    question: "Do you provide customized lift solutions?",
     answer:
-      "Yes, we specialize in bespoke elevator designs that match your building's architecture, load requirements, and aesthetic preferences. Our engineers work closely with you from concept to installation.",
+      "Yes, we design custom commercial lift systems tailored to your building layout, traffic requirements, and architectural aesthetics.",
   },
   {
     id: "03",
-    question: "Are your elevators safe during power failure?",
+    question: "Are your lifts safe during power failures?",
     answer:
-      "All our elevators are equipped with battery-powered rescue devices (ARD) that automatically lower the cabin to the nearest floor and open the doors safely in case of a power outage.",
+      "All our lifts are equipped with Automatic Rescue Devices (ARD) that safely move the cabin to the nearest floor during a power outage.",
   },
   {
     id: "04",
     question: "Do you offer installation and maintenance services?",
     answer:
-      "Absolutely. We provide end-to-end services including site surveys, installation, commissioning, annual maintenance contracts (AMC), and 24/7 emergency support.",
+      "Yes, we provide complete installation, testing, maintenance contracts, and responsive technical support across the UAE.",
   },
   {
     id: "05",
-    question: "What is the typical lead time for an elevator project?",
+    question: "How long does installation usually take?",
     answer:
-      "Lead times vary by project complexity, but a standard passenger lift typically takes 8–12 weeks from order confirmation to installation completion.",
+      "Installation timelines depend on the project size, but most commercial lift installations are completed efficiently within the scheduled project timeframe.",
   },
 ];
 
@@ -164,7 +164,7 @@ export default function FaqContact() {
         {/* ── Right: Image ── */}
 <div className={styles.imageSide}>
   <img
-    src="/images/faq-image.png"
+    src="/images/faq-image.jpeg"
     alt="Invent Elevator"
     className={styles.sideImage}
   />

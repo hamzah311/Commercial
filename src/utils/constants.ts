@@ -3,7 +3,7 @@ export const HERO_TEXTS = {
         hero: {
             // Heading: "Private Home Elevators Designed for Luxury Villas in the UAE",
             // highlightedText: "Elevation",
-            subHeading: "Advanced commercial lift solutions designed for smooth performance, enhanced safety, and seamless movement across modern commercial spaces.",
+            subHeading: "Advanced, reliable, and design-focused commercial lift systems crafted for offices, hotels, retail spaces, and modern commercial developments.",
             buttonText: "Get a free quote",
         },
     },
