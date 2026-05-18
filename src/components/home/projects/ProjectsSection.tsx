@@ -6,41 +6,40 @@ import styles from "./ProjectsSection.module.css";
 const PROJECTS_DEFAULT = [
   {
     index: "01",
-    title: "Dubai Hills Villa Residence",
-    imageSrc: "/images/projects/_DSC5734.jpg",
-    imageAlt: "Luxury home lift installation at Dubai Hills villa",
-    href: "/projects/dubai-hills-villa-residence",
+    title: "Luxury Panoramic Glass Elevator",
+    imageSrc: "/images/projects/p1.jpg",
+    imageAlt: "Luxury panoramic glass elevator in premium commercial lobby",
+    href: "/projects/luxury-panoramic-glass-elevator",
   },
   {
     index: "02",
-    title: "Modern Home Lift Installation",
+    title: "Corporate Office Passenger Lift",
     imageSrc: "/images/projects/_DSC6621.jpg",
-    imageAlt: "Modern residential lift project in Dubai Hills",
-    href: "/projects/modern-home-lift-installation",
+    imageAlt: "Modern passenger lift installation in corporate office",
+    href: "/projects/corporate-office-passenger-lift",
   },
   {
     index: "03",
-    title: "Premium Villa Elevator",
-    imageSrc: "/images/projects/_DSC5738.jpg",
-    imageAlt: "Premium home elevator project at Dubai Hills",
-    href: "/projects/premium-villa-elevator",
+    title: "Premium Hotel Elevator System",
+    imageSrc: "/images/projects/p3.jpg",
+    imageAlt: "Premium elevator system for luxury hotel interiors",
+    href: "/projects/premium-hotel-elevator-system",
   },
   {
     index: "04",
-    title: "Contemporary Home Lift",
+    title: "Contemporary Commercial Lift",
     imageSrc: "/images/projects/_DSC6628.jpg",
-    imageAlt: "Contemporary luxury lift installation project",
-    href: "/projects/contemporary-home-lift",
+    imageAlt: "Contemporary commercial elevator with glass detailing",
+    href: "/projects/contemporary-commercial-lift",
   },
   {
     index: "05",
-    title: "Luxury Residential Elevator",
-    imageSrc: "/images/projects/_DSC5891.jpg",
-    imageAlt: "Luxury residential elevator installation",
-    href: "/projects/luxury-residential-elevator",
+    title: "Luxury Hospitality Elevators",
+    imageSrc: "/images/projects/p5.jpg",
+    imageAlt: "Luxury hospitality elevator installation with designer interiors",
+    href: "/projects/luxury-hospitality-elevators",
   },
 ];
-
 interface ProjectItem {
   index: string;
   title: string;
