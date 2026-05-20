@@ -101,7 +101,7 @@
 
 .card:hover {
   border-color: #000000;
-  box-shadow: 0 8px 32px rgba(229, 184, 105, 0.15);
+  /* box-shadow: 0 8px 32px rgba(229, 184, 105, 0.15); */
   background: #f2f2f2;
 }
 

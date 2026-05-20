@@ -14,7 +14,7 @@ const PROJECTS_DEFAULT = [
   {
     index: "02",
     title: "Corporate Office Passenger Lift",
-    imageSrc: "/images/projects/_DSC6621.jpg",
+    imageSrc: "/images/projects/p2.jpg",
     imageAlt: "Modern passenger lift installation in corporate office",
     href: "/projects/corporate-office-passenger-lift",
   },
@@ -28,7 +28,7 @@ const PROJECTS_DEFAULT = [
   {
     index: "04",
     title: "Contemporary Commercial Lift",
-    imageSrc: "/images/projects/_DSC6628.jpg",
+    imageSrc: "/images/projects/p4.jpg",
     imageAlt: "Contemporary commercial elevator with glass detailing",
     href: "/projects/contemporary-commercial-lift",
   },
