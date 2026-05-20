@@ -75,7 +75,7 @@ const ArrowIcon = () => (
 );
 
 export default function HeroBanner({
-  videoSrc = "/video-1.mp4",
+  videoSrc = "/1.mp4",
   videoPoster = "",
   title,
   subtitle,

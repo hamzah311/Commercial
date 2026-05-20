@@ -39,11 +39,11 @@ export default function Home() {
       <HeroBanner data={HERO_TEXTS[current_theme]} />
       <ContactForm />
       <StatsSection />
+      <MarqueeLogos />
       <ProjectsSection />
       < SafetySection />
       {/* <AboutSection /> */}
       {/* <MarqueeSection /> */}
-      <MarqueeLogos />
       <IndustriesSection />
       <SeriesSection />
       <FeaturesSection />
