@@ -1,17 +1,43 @@
 /* ─────────────────────────────────────────────
    MarqueeLogos.module.css
-   ───────────────────────────────────────────── */
+───────────────────────────────────────────── */
 
 .section {
   width: 100%;
   overflow: hidden;
   background: #ffffff;
-  padding: 32px 0;
+  padding: 48px 40px 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+  box-sizing: border-box;
+}
 
-  /* Subtle left/right fade masks */
+/* ── Heading row ── */
+.headingRow {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* add this */
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heading {
+  font-family: var(--font-verah);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center; /* add this */
+}
+
+/* ── Marquee fade masks (applied only to the track area) ── */
+.rowWrapper {
+  width: 100%;
+  overflow: hidden;
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -28,13 +54,7 @@
   );
 }
 
-/* ── Row wrapper ───────────────────────────── */
-.rowWrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* ── Scrolling track ───────────────────────── */
+/* ── Scrolling track ── */
 .track {
   display: flex;
   align-items: center;
@@ -43,22 +63,19 @@
   will-change: transform;
 }
 
-/* Top row: slides toward the left */
 .trackLeft {
   animation: scrollLeft 30s linear infinite;
 }
 
-/* Bottom row: slides toward the right */
 .trackRight {
   animation: scrollRight 30s linear infinite;
 }
 
-/* Pause on hover for accessibility / UX */
 .section:hover .track {
   animation-play-state: paused;
 }
 
-/* ── Individual logo card ──────────────────── */
+/* ── Individual logo card ── */
 .logoCard {
   flex-shrink: 0;
   display: flex;
@@ -66,24 +83,19 @@
   justify-content: center;
   height: 80px;
   padding: 0 16px;
-
-  /* Subtle separator */
-  /* border-right: 1px solid #e8e8f0; */
 }
 
 .logoCard:last-child {
   border-right: none;
 }
 
-/* ── Logo image ────────────────────────────── */
+/* ── Logo image ── */
 .logoImg {
   max-height: 52px;
   max-width: 160px;
   width: auto;
   height: auto;
   object-fit: contain;
-
-  /* Desaturate at rest; colour on hover */
   filter: grayscale(30%) opacity(0.85);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
@@ -93,31 +105,30 @@
   transform: scale(1.06);
 }
 
-/* ── Keyframes ─────────────────────────────── */
-
-/* 
-  scrollLeft moves the track from 0 → -33.333%
-  (one full set of logos, since we tripled the list).
-*/
+/* ── Keyframes ── */
 @keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
 }
 
 @keyframes scrollRight {
-  0% {
-    transform: translateX(-33.333%);
+  0%   { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .section {
+    padding: 36px 16px 24px;
+    gap: 24px;
   }
-  100% {
-    transform: translateX(0);
+
+  .heading {
+    font-size: 1.5rem;
   }
 }
 
-/* ── Reduced-motion accessibility ─────────── */
+/* ── Reduced-motion ── */
 @media (prefers-reduced-motion: reduce) {
   .trackLeft,
   .trackRight {

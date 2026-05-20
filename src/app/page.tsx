@@ -41,7 +41,6 @@ export default function Home() {
       <StatsSection />
       <MarqueeLogos />
       <ProjectsSection />
-      < SafetySection />
       {/* <AboutSection /> */}
       {/* <MarqueeSection /> */}
       <IndustriesSection />
@@ -58,7 +57,8 @@ export default function Home() {
       <HSection data={LIFE_HERO_SECTION[current_theme]} />
       <Designed data={DESIGNED_SPACES_HERO[current_theme]} />
       <Testimonial data={TESTIMONIAL[current_theme]} /> 
-        */}
+      */}
+      < SafetySection />
       <ReviewSection />
       <FaqContact />
       <ContactBanner />

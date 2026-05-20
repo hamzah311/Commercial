@@ -4,7 +4,7 @@
 
    .wrapper {
     width: 100%;
-    background: #f7f5f2;
+    background: #f3f3f3;
     padding: 80px 40px;
     box-sizing: border-box;
     overflow: hidden;
@@ -116,7 +116,7 @@
     width: 100%;
     height: 160px;
     border-radius: 12px;
-    background: #f0ece5;
+    background: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +186,7 @@
     margin-top: auto;
     padding: 4px 12px;
     border-radius: 50px;
-    background: #f0ece5;
+    background: #f2f2f2;
     font-family: var(--font-montserrat);
     font-size: 0.7rem;
     font-weight: 600;
@@ -197,8 +197,8 @@
   }
   
   .card:hover .cardTag {
-    background: rgba(212, 168, 90, 0.18);
-    color: #d4a85a;
+    background: #f2f2f2;
+    color: #000000;
   }
   
   /* ── Tablet ── */
