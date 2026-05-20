@@ -1,18 +1,18 @@
 import styles from "./MarqueeLogos.module.css";
 
 const topLogos = [
-  { src: "/logos/logo-2.png",  alt: "Logo 2" },
-  { src: "/logos/logo-3.png",  alt: "Logo 3" },
-  { src: "/logos/logo-4.png",  alt: "Logo 4" },
-  { src: "/logos/logo-5.png",  alt: "Logo 5" },
-  { src: "/logos/logo-6.png",  alt: "Logo 6" },
-  { src: "/logos/logo-7.png",  alt: "Logo 7" },
-  { src: "/logos/logo-9.png",  alt: "Logo 9" },
-  { src: "/logos/logo-10.png", alt: "Logo 10" },
-  { src: "/logos/logo-11.png", alt: "Logo 11" },
-  { src: "/logos/logo-12.png", alt: "Logo 12" },
-  { src: "/logos/logo-13.png", alt: "Logo 13" },
-  { src: "/logos/logo-14.png", alt: "Logo 14" },
+  { src: "commercial/logos/logo-2.png",  alt: "Logo 2" },
+  { src: "commercial/logos/logo-3.png",  alt: "Logo 3" },
+  { src: "commercial/logos/logo-4.png",  alt: "Logo 4" },
+  { src: "commercial/logos/logo-5.png",  alt: "Logo 5" },
+  { src: "commercial/logos/logo-6.png",  alt: "Logo 6" },
+  { src: "commercial/logos/logo-7.png",  alt: "Logo 7" },
+  { src: "commercial/logos/logo-9.png",  alt: "Logo 9" },
+  { src: "commercial/logos/logo-10.png", alt: "Logo 10" },
+  { src: "commercial/logos/logo-11.png", alt: "Logo 11" },
+  { src: "commercial/logos/logo-12.png", alt: "Logo 12" },
+  { src: "commercial/logos/logo-13.png", alt: "Logo 13" },
+  { src: "commercial/logos/logo-14.png", alt: "Logo 14" },
 ];
 
 interface LogoRowProps {

@@ -9,7 +9,7 @@ const CARDS = [
     title: "Emergency Systems",
     description:
       "Automatic rescue devices, backup power, and alarm systems ensure passenger safety during any power interruption.",
-    imageSrc: "/images/safety/emergency.svg",
+    imageSrc: "/commercial/images/safety/emergency.svg",
     imageAlt: "Emergency systems icon",
   },
   {
@@ -17,7 +17,7 @@ const CARDS = [
     title: "Smart Controls",
     description:
       "Intuitive touchscreen panels, destination dispatch, and remote diagnostics for seamless and intelligent operation.",
-    imageSrc: "/images/safety/smart-controls.svg",
+    imageSrc: "/commercial/images/safety/smart-controls.svg",
     imageAlt: "Smart controls icon",
   },
   {
@@ -25,7 +25,7 @@ const CARDS = [
     title: "Compliance Standards",
     description:
       "Fully certified to EN81, Dubai Municipality, and international safety codes with regular third-party audits.",
-    imageSrc: "/images/safety/compliance.svg",
+    imageSrc: "/commercial/images/safety/compliance.svg",
     imageAlt: "Compliance standards icon",
   },
   {
@@ -33,7 +33,7 @@ const CARDS = [
     title: "Backup Systems",
     description:
       "Redundant hydraulics, UPS battery backup, and fail-safe braking mechanisms guarantee uninterrupted service.",
-    imageSrc: "/images/safety/backup.svg",
+    imageSrc: "/commercial/images/safety/backup.svg",
     imageAlt: "Backup systems icon",
   },
 ];

@@ -15,7 +15,7 @@ interface ContactBannerProps {
 export default function ContactBanner({ data }: ContactBannerProps) {
     const heading        = data?.heading        ?? "Planning a lift installation in the UAE?";
     const subheading     = data?.subheading     ?? "We'll recommend the best lift for your home within 24 hours";
-    const imageSrc       = data?.imageSrc       ?? "/images/contact-bg-1.jpg";
+    const imageSrc       = data?.imageSrc       ?? "/commercial/images/contact-bg-1.jpg";
     const whatsappNumber = data?.whatsappNumber ?? "971500000000";
     const formAction     = data?.formAction     ?? "https://formsubmit.co/info@inventelevator.com";
 

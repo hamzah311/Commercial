@@ -7,37 +7,37 @@ const SERIES_DEFAULT = [
     name: "Passenger Lifts",
     description:
       "Smooth and efficient lifts designed for offices, hotels, and commercial buildings.",
-    imageSrc: "/images/series/passngr2.png",
+    imageSrc: "/commercial/images/series/passngr2.png",
   },
   {
     name: "Freight Lifts",
     description:
       "Heavy-duty lift systems built for safe and reliable goods transportation.",
-    imageSrc: "/images/series/freight2.png",
+    imageSrc: "/commercial/images/series/freight2.png",
   },
   {
     name: "Panoramic Lifts",
     description:
       "Elegant glass elevators adding a modern architectural statement to commercial spaces.",
-    imageSrc: "/images/series/panoramic2.png",
+    imageSrc: "/commercial/images/series/panoramic2.png",
   },
   {
     name: "Hospital Lifts",
     description:
       "Safe and spacious lift solutions engineered for hospitals and healthcare facilities.",
-    imageSrc: "/images/series/hospital2.png",
+    imageSrc: "/commercial/images/series/hospital2.png",
   },
   {
     name: "Car Lifts",
     description:
       "Advanced automobile lift systems designed for parking towers, villas, and commercial garages.",
-    imageSrc: "/images/series/car.png",
+    imageSrc: "/commercial/images/series/car.png",
   },
   {
     name: "Dumbwaiter Lifts",
     description:
       "Compact service lifts ideal for restaurants, hotels, hospitals, and food transportation.",
-    imageSrc: "/images/series/dumbwaiter.png",
+    imageSrc: "/commercial/images/series/dumbwaiter.png",
   },
 ];
 

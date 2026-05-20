@@ -11,7 +11,7 @@ const REVIEWS_DEFAULT = [
     review:
       "Invent Elevator delivered a premium commercial lift solution for our office tower with exceptional finishing and smooth performance.",
     initials: "AM",
-    image: "/images/reviews/space.jpeg",
+    image: "/commercial/images/reviews/space.jpeg",
   },
   {
     name: "Omar Al Falasi",
@@ -20,7 +20,7 @@ const REVIEWS_DEFAULT = [
     review:
       "Professional execution from start to finish. The passenger lifts perfectly complement our commercial building interiors.",
     initials: "OF",
-    image: "/images/reviews/passngr2.png",
+    image: "/commercial/images/reviews/passngr2.png",
   },
   {
     name: "Khalid Al Marri",
@@ -29,7 +29,7 @@ const REVIEWS_DEFAULT = [
     review:
       "The installation process was fast, organized, and caused minimal disruption to our operations.",
     initials: "KM",
-    image: "/images/reviews/installation.jpeg",
+    image: "/commercial/images/reviews/installation.jpeg",
   },
   {
     name: "Fatima Al Hashmi",
@@ -38,7 +38,7 @@ const REVIEWS_DEFAULT = [
     review:
       "Excellent lift quality and reliable performance. Our visitors immediately notice the modern design and smooth ride.",
     initials: "FH",
-    image: "/images/reviews/panoramic2.png",
+    image: "/commercial/images/reviews/panoramic2.png",
   },
   {
     name: "Saeed Al Mazrouei",
@@ -47,7 +47,7 @@ const REVIEWS_DEFAULT = [
     review:
       "Highly impressed with the German components and overall build quality. The team handled everything professionally.",
     initials: "SM",
-    image: "/images/reviews/minimal.jpeg",
+    image: "/commercial/images/reviews/minimal.jpeg",
   },
   {
     name: "Mariam Al Nuaimi",
@@ -56,7 +56,7 @@ const REVIEWS_DEFAULT = [
     review:
       "A reliable partner for commercial lift projects. The final installation exceeded our expectations in both quality and aesthetics.",
     initials: "MN",
-    image: "/images/reviews/seamless.jpeg",
+    image: "/commercial/images/reviews/seamless.jpeg",
   },
 ];
 
